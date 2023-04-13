@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>An Chuột 3 tủi</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Happy birthday</h1>
+        <h1>An Chuột 3 tủi</h1>
+        <img src="https://via.placeholder.com/150" class="rotate">
+        <img src="https://via.placeholder.com/150" class="rotate">
+        <img src="https://via.placeholder.com/150" class="rotate">
+        <img src="https://via.placeholder.com/150" class="rotate">
+        <img src="https://via.placeholder.com/150" class="rotate">
+        <img src="https://via.placeholder.com/150" class="rotate">
+        <img src="https://via.placeholder.com/150" class="rotate">
+        <img src="https://via.placeholder.com/150" class="rotate">
+        <img src="https://via.placeholder.com/150" class="rotate">
+        <img src="https://via.placeholder.com/150" class="rotate">
+    </div>
+    <div class="firework"></div>
+    <audio id="audio" src="https://zingmp3.vn/album/Happy-Birthday-Be-Louise/ZWZCW99U.html">
+        </audio>>
+
+    <!-- Thêm thư viện Fireworks.js -->
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-canvas@2.1.9"></script>
+    <script>
+        // Lấy đối tượng div fireworks
+        var fireworksDiv = document.querySelector('.fireworks');
+
+        // Tạo đối tượng pháo hoa
+        var fireworks = new Fireworks({
+            target: fireworksDiv,
+            hue: 120,
+            startDelay: 1,
+            minDelay: 20,
+            maxDelay: 30,
+            speed: 4,
+            acceleration: 1.05,
+            friction: 0.98,
+            gravity: 0.1,
+            particles: 70,
+            trace: 3,
+            explosion: 8,
+            autoresize: true,
+            sound: {
+                enable: false
+            }
+        });
+
+        // Bắt đầu hiệu ứng
+        fireworks.start();
+    </script>
+
+</body>
+
+</html>
