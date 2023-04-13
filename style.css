@@ -47,22 +47,20 @@ h1 {
 }
 
 body {
-    background-image: url('https://scontent.fhan1-1.fna.fbcdn.net/v/t39.30808-6/337517582_954497609041025_8543268070235886057_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0debeb&_nc_ohc=U3WAWvJLMQwAX91jBJ8&_nc_ht=scontent.fhan1-1.fna&oh=00_AfAZtgqwzkhq_YEWnApRCgrbs9CilL7GnQuiU9mKyarEHQ&oe=643D57B2');
+    background-image: url('10.jpg');
     background-size: cover;
     animation: moveBackground 5s linear infinite;
 }
 
-@keyframes moveBackground {
+
+/* @keyframes moveBackground {
     0% {
         background-position: 0 0;
     }
     100% {
         background-position: 100% 0;
     }
-}
-
-
-/* Quy tắc CSS cho kích thước màn hình nhỏ hơn hoặc bằng 768px */
+} */
 
 @media (max-width: 768px) {
     #container {
@@ -76,9 +74,6 @@ body {
         width: 50%;
     }
 }
-
-
-/* Quy tắc CSS cho kích thước màn hình nhỏ hơn hoặc bằng 480px */
 
 @media (max-width: 480px) {
     h1 {
