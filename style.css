@@ -15,12 +15,6 @@ h1 {
     font-family: Brush Script MT;
 }
 
-h2 {
-    animation: changeColor 2s linear infinite;
-    font-size: 100px;
-    font-family: Brush Script MT;
-}
-
 @keyframes changeColor {
     0% {
         color: red;
@@ -37,15 +31,6 @@ h2 {
     100% {
         color: red;
     }
-}
-
-.fireworks {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
 }
 
 .rotate {
@@ -73,5 +58,33 @@ body {
     }
     100% {
         background-position: 100% 0;
+    }
+}
+
+
+/* Quy tắc CSS cho kích thước màn hình nhỏ hơn hoặc bằng 768px */
+
+@media (max-width: 768px) {
+    #container {
+        width: 100%;
+        padding-top: 30px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    .rotate {
+        width: 50%;
+    }
+}
+
+
+/* Quy tắc CSS cho kích thước màn hình nhỏ hơn hoặc bằng 480px */
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+    .rotate {
+        width: 80%;
     }
 }
