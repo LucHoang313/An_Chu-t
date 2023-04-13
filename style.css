@@ -60,3 +60,18 @@ h2 {
         transform: rotate(360deg);
     }
 }
+
+body {
+    background-image: url('https://scontent.fhan1-1.fna.fbcdn.net/v/t39.30808-6/337517582_954497609041025_8543268070235886057_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0debeb&_nc_ohc=U3WAWvJLMQwAX91jBJ8&_nc_ht=scontent.fhan1-1.fna&oh=00_AfAZtgqwzkhq_YEWnApRCgrbs9CilL7GnQuiU9mKyarEHQ&oe=643D57B2');
+    background-size: cover;
+    animation: moveBackground 5s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
