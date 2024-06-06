@@ -1,77 +1,27 @@
-<html __fvdsurfcanyoninserted="1" class="
-        clickberry-extension
-        clickberry-extension-standalone
-        clickberry-extension
-        clickberry-extension-standalone
-        clickberry-extension
-        clickberry-extension-standalone
-    ">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <!-- 0. Phần icon của website (thay đổi link đến icon nếu bạn muốn sửa nó) -->
-    <link rel="shortcut icon" type="image/png" href="./birthdayCake.png" />
-
-    <!-- 1. Đây là phần title của website -->
-    <title>Happy Birthday</title>
-    <link rel="stylesheet" href="./style.css">
-    <script>
-        window.open = function() {};
-        window.print = function() {};
-        // Support hover state for mobile.
-        if (false) {
-            window.ontouchstart = function() {};
-        }
-    </script>
-    <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
-    <meta content="clickberry-extension-here" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-<body>
-    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css" />
+<body bgcolor="black", align="center">
     <div class="container">
-        <!-- 2. Dòng chữ Happy Birthday
-            Nếu bạn muốn thêm chữ vào thì phải thay đổi css tương ứng cho nó -->
-        <div class="balloon">
-            <div><span>H</span></div>
-            <div><span>A</span></div>
-            <div><span>P</span></div>
-            <div><span>P</span></div>
-            <div><span>Y</span></div>
-            <div><span>B</span></div>
-            <div><span>I</span></div>
-            <div><span>R</span></div>
-            <div><span>T</span></div>
-            <div><span>H</span></div>
-            <div><span>D</span></div>
-            <div><span>A</span></div>
-            <div><span>Y</span></div>
-        </div>
-        <div class="avatar">
-            <img src="https://b-f8-zpc.zdn.vn/8463864530685278994/ab5e157bbc00625e3b11.jpg" alt="" class="avatar__img" onclick="showMessage()" />
-            <h1 onclick="showMessage()" class="avatar__title">Chúc mừng sinh nhật đồ An Chuột hôi.</h1>
-        </div>
 
-        <audio id="player " autoplay loop>
-                <source src="./music.mp3 " type="audio/mp3 ">
-            </audio>
+    </select>
+        <div class="image-container">
+            <img id="qualityImage" src="images/144p.png" alt="Video Quality">
+        </div>
+        <h1>Chọn Chất Lượng Video</h1>
+        <select id="qualitySelect" onchange="changeImage()">
+            <option value="144p">144p</option>
+            <option value="240p">240p</option>
+            <option value="480p">480p</option>
+            <option value="720p">720p</option>
+            <option value="1080p">1080p</option>
+        
     </div>
-    <script>
-        if (document.location.search.match(/type=embed/gi)) {
-            window.parent.postMessage("resize ", "* ");
-        }
-
-        function showMessage() {
-            swal({
-                title: "Lời nhắn ",
-                text: "Chúc mừng sinh nhật cái thằng Chuột thúi", // Nội dung lời nhắn
-                button: {
-                    text: "Close ",
-                },
-            });
-        }
-    </script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
